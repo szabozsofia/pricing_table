@@ -1,0 +1,20 @@
+.free {
+  grid-area: free;
+}
+
+.basic {
+  grid-area: basic;
+}
+
+.premium {
+  grid-area: premium;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 70%;
+  grid-gap: 5%;
+  grid-template-areas: 
+    "free basic premium"
+}
