@@ -1,20 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
 .free {
   grid-area: free;
+ 
 }
 
 .basic {
   grid-area: basic;
+  
 }
 
 .premium {
   grid-area: premium;
+  
 }
+
+.item {
+  background-color: rgb(211, 211, 211);
+  border-radius: 10px;
+}
+
+.price {
+  background-color: rgb(255, 0, 0);
+  padding: 0.9375rem;
+  color: white;
+}
+
+.package {
+  padding: 0.9375rem;
+}
+
+h5 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.description {
+  padding: 0.9375rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  padding: 0.625rem;
+  border: 1px solid white;
+  border-radius: 30px;
+  white-space: nowrap;
+  margin-bottom: 0.625rem;
+  background-color: darkblue;
+  vertical-align: middle;
+}
+
+.features {
+  text-align: left;
+  padding: 2rem;
+  
+}
+
 
 .container{
   display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 70%;
-  grid-gap: 5%;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 100%;
+  grid-gap: 1%;
   grid-template-areas: 
     "free basic premium"
 }
